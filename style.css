@@ -1,0 +1,112 @@
+/* ======== CONFIGURAÇÃO GERAL ======== */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    color: #222;
+    line-height: 1.6;
+    background: url('background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+}
+
+/* ======== CONTAINER PRINCIPAL ======== */
+.container {
+    background-color: rgba(255, 255, 255, 0.88);
+    margin: 50px auto;
+    max-width: 1000px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    padding: 40px;
+}
+
+/* ======== TÍTULO ======== */
+h1 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 2.2rem;
+    color: #111;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* ======== TABELA ======== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    font-size: 1.1rem;
+    color: #222;
+    font-weight: 550;
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+    vertical-align: top;
+}
+
+/* ======== IMAGENS ======== */
+td img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.05);
+}
+
+/* ======== LINKS ======== */
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+
+a:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    table, tr, td, th {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    td img {
+        width: 120px;
+        height: 120px;
+    }
+
+    a {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
